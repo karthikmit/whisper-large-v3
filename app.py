@@ -23,7 +23,8 @@ class InferlessPythonModel:
             print("[%.2fs -> %.2fs] %s" % (segment_.start, segment_.end, segment_.text))
             segment_texts.append(segment_.text)
 
-        return segment_texts
+        segment = '\n'.join(segment_texts)
+        return segment
 
     def finalize(self):
         pass
