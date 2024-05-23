@@ -5,7 +5,7 @@ import io
 class InferlessPythonModel:
         
     def initialize(self):
-        model_size = "large-v3"
+        model_size = "medium"
         self.model = WhisperModel(model_size, device="cuda", compute_type="float16")
 
     def infer(self, inputs):
